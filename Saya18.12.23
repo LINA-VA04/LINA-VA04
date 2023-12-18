@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+using namespace std;
+void Obmenka(int, double, string);
+int main()
+{ int som = 100;
+ double valuta = 84.30;
+ string valuta_ati="доллар";
+ Obmenka(som, valuta, valuta_ati);
+ Obmenka(100, 92.45,"евро");
+ return 0;
+}
+void Obmenka(int x, double y,string z)
+{ double rez = x / y;
+ cout << x << " сом = " << rez << " "<<z<<endl;
+}
