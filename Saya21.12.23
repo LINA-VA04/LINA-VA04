@@ -1,0 +1,16 @@
+
+#include<iostream>
+using namespace std;
+float areaRectangle(float a, float b);
+float areaRectangle(float a_m,float a_sm, float b_m, float b_sm);
+int main(){
+    cout<<"S1="<<areaRectangle(2,3)<<endl;
+    cout<<"S2="<<areaRectangle(1,3,2,4)<<endl;
+    return 0;}
+    float areaRectangle(float a,float b){
+    return a*b;}
+    float areaRectangle(float a_m, float a_sm, float b_m, float b_sm){
+        return(a_m+a_sm)*(b_sm+b_m);
+    }
+
+
